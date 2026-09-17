@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>{{ page_title }}</title>
+<meta name="description" content="{{ meta_description }}">
+<link rel="canonical" href="{{ site_url }}/{{ url_path }}">
+<link rel="stylesheet" href="{{ root }}style.css">
+</head>
+<body>
+<header class="site-header">
+  <a class="brand" href="{{ root }}index.html">SoloStack</a>
+  <nav><a href="{{ root }}index.html">Home</a><a href="{{ root }}about.html">About</a></nav>
+</header>
+<main>
+{{ content|safe }}
+</main>
+<footer class="site-footer">
+  <p>&copy; {{ year }} SoloStack. Alcuni link in questo sito sono link di affiliazione: se acquisti tramite questi link potremmo ricevere una commissione, senza costi aggiuntivi per te.</p>
+</footer>
+</body>
+</html>
